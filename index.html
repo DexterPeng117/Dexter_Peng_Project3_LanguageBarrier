@@ -663,17 +663,15 @@
   </nav>
 
   <!-- ─── HERO ──────────────────────────────────────────────────── -->
-  <section id="hero">
+  <section id="hero" style="position:relative; min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:120px 40px 80px; overflow:hidden; background:#f8f8f6;">
 
-    <p class="hero-name reveal">Language Barrier</p>
+    <p class="hero-name reveal" style="font-family:'Playfair Display',serif; font-size:clamp(56px,10vw,140px); font-weight:400; color:#0a0a0a; line-height:1; margin:0; position:relative; z-index:2;">Language Barrier</p>
 
-    <div class="hero-center-img reveal reveal-delay-1">
-      <img src="hero.jpg" alt="Travel map" onerror="this.style.display='none';this.parentElement.style.background='#ddd';" />
-    </div>
+    <img src="hero.jpg" alt="Travel map"
+      style="position:relative; z-index:1; width:clamp(180px,28vw,360px); height:auto; display:block; margin:-60px auto; transform:rotate(-60deg); box-shadow:0 12px 48px rgba(0,0,0,0.2);"
+      class="reveal reveal-delay-1" />
 
-    <h1 class="hero-title reveal reveal-delay-2">
-      In Travel
-    </h1>
+    <h1 style="font-family:'Playfair Display',serif; font-size:clamp(56px,10vw,140px); font-weight:400; color:#0a0a0a; line-height:1; margin:0; position:relative; z-index:2;" class="reveal reveal-delay-2">In Travel</h1>
 
     <p class="hero-sub reveal reveal-delay-3">
       A Study on Communication &amp; Identity &nbsp;·&nbsp; Dexter Peng &nbsp;·&nbsp; Project 03
