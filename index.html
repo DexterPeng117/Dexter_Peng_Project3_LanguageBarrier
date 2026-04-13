@@ -148,12 +148,12 @@
     }
     .hero-center-img {
       position: relative;
-      z-index: 3;
+      z-index: 1;
       width: clamp(220px, 32vw, 480px);
       aspect-ratio: 4/3;
       overflow: hidden;
       margin: -20px auto;
-      transform: rotate(-2deg);
+      transform: rotate(-30deg);
       box-shadow: 0 8px 40px rgba(0,0,0,0.12);
     }
     .hero-center-img img {
@@ -162,12 +162,11 @@
       filter: grayscale(20%);
     }
     .hero-title {
-      font-family: var(--sans);
-      font-size: clamp(72px, 16vw, 220px);
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      line-height: 0.85;
-      text-transform: uppercase;
+      font-family: var(--serif);
+      font-size: clamp(36px, 6vw, 88px);
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      line-height: 1;
       position: relative;
       z-index: 2;
       margin-bottom: 0;
@@ -665,14 +664,14 @@
   <!-- ─── HERO ──────────────────────────────────────────────────── -->
   <section id="hero">
 
-    <p class="hero-name reveal">Dexter Peng</p>
+    <p class="hero-name reveal">Language Barrier</p>
 
     <div class="hero-center-img reveal reveal-delay-1">
       <img src="hero.jpg" alt="Travel map" onerror="this.style.display='none';this.parentElement.style.background='#ddd';" />
     </div>
 
     <h1 class="hero-title reveal reveal-delay-2">
-      LANGUAGE<br>BARRIER
+      In Travel
     </h1>
 
     <p class="hero-sub reveal reveal-delay-3">
