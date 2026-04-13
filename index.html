@@ -150,16 +150,15 @@
     .hero-center-img {
       position: relative;
       z-index: 1;
-      width: clamp(180px, 26vw, 380px);
-      aspect-ratio: 4/3;
-      overflow: hidden;
-      margin: -10px auto;
+      width: clamp(180px, 26vw, 360px);
+      margin: -30px auto;
       transform: rotate(-30deg);
-      box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+      box-shadow: 0 12px 48px rgba(0,0,0,0.18);
     }
     .hero-center-img img {
-      width: 100%; height: 100%;
-      object-fit: cover;
+      width: 100%;
+      height: auto;
+      display: block;
       filter: grayscale(20%);
     }
     .hero-title {
