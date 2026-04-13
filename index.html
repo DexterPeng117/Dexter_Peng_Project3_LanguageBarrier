@@ -130,63 +130,57 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 120px 60px 80px;
+      padding: 100px 40px 80px;
       position: relative;
       overflow: hidden;
+      background: var(--white);
     }
     .hero-name {
       font-family: var(--serif);
-      font-size: clamp(18px, 2.5vw, 28px);
+      font-size: clamp(36px, 6vw, 88px);
       font-weight: 400;
-      letter-spacing: 0.08em;
-      color: var(--gray);
-      margin-bottom: 20px;
+      letter-spacing: -0.01em;
+      color: var(--black);
+      line-height: 1;
+      margin-bottom: 0;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-center-img {
+      position: relative;
+      z-index: 3;
+      width: clamp(220px, 32vw, 480px);
+      aspect-ratio: 4/3;
+      overflow: hidden;
+      margin: -20px auto;
+      transform: rotate(-2deg);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+    }
+    .hero-center-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      filter: grayscale(20%);
     }
     .hero-title {
       font-family: var(--sans);
-      font-size: clamp(72px, 14vw, 200px);
+      font-size: clamp(72px, 16vw, 220px);
       font-weight: 700;
       letter-spacing: -0.03em;
-      line-height: 0.88;
+      line-height: 0.85;
       text-transform: uppercase;
-      margin-bottom: 16px;
+      position: relative;
+      z-index: 2;
+      margin-bottom: 0;
     }
-    .hero-title-italic {
-      font-family: var(--serif);
-      font-style: italic;
-      font-size: clamp(40px, 8vw, 110px);
-      font-weight: 400;
-      letter-spacing: -0.01em;
-      line-height: 1;
-      display: block;
-    }
+    .hero-title-italic { display: none; }
     .hero-sub {
-      margin-top: 40px;
-      font-size: 13px;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
+      margin-top: 28px;
+      font-size: 14px;
+      letter-spacing: 0.12em;
       color: var(--gray);
+      font-weight: 400;
     }
-    .hero-img-left, .hero-img-right {
-      position: absolute;
-      width: clamp(140px, 18vw, 260px);
-      aspect-ratio: 3/4;
-      background: var(--light);
-      overflow: hidden;
-    }
-    .hero-img-left {
-      top: 50%; left: 4%;
-      transform: translateY(-50%) rotate(-3deg);
-    }
-    .hero-img-right {
-      top: 50%; right: 4%;
-      transform: translateY(-50%) rotate(3deg);
-    }
-    .hero-img-left img, .hero-img-right img {
-      width: 100%; height: 100%;
-      object-fit: cover;
-      filter: grayscale(100%);
-    }
+    .hero-img-left, .hero-img-right { display: none; }
     .placeholder-img {
       width: 100%; height: 100%;
       background: linear-gradient(135deg, #d0d0d0 0%, #b0b0b0 100%);
@@ -670,24 +664,20 @@
 
   <!-- ─── HERO ──────────────────────────────────────────────────── -->
   <section id="hero">
-    <div class="hero-img-left reveal">
-      <div class="placeholder-img">Image</div>
+
+    <p class="hero-name reveal">Dexter Peng</p>
+
+    <div class="hero-center-img reveal reveal-delay-1">
+      <img src="hero.jpg" alt="Travel map" onerror="this.style.display='none';this.parentElement.style.background='#ddd';" />
     </div>
 
-    <p class="hero-name reveal reveal-delay-1">Dexter Peng &nbsp;·&nbsp; Project 03</p>
-
     <h1 class="hero-title reveal reveal-delay-2">
-      Language
-      <span class="hero-title-italic">Barrier</span>
+      LANGUAGE<br>BARRIER
     </h1>
 
     <p class="hero-sub reveal reveal-delay-3">
-      A Study on Communication &amp; Identity
+      A Study on Communication &amp; Identity &nbsp;·&nbsp; Dexter Peng &nbsp;·&nbsp; Project 03
     </p>
-
-    <div class="hero-img-right reveal reveal-delay-2">
-      <div class="placeholder-img">Image</div>
-    </div>
 
     <div class="scroll-hint reveal reveal-delay-4">
       <span>Scroll</span>
